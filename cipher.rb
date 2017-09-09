@@ -10,7 +10,7 @@ end
 
 def caesar_cipher(cipher,factor)
     factor = factor.to_i
-    words = cipher.split("")
+    words = cipher.to_s.split("")
     words.each do |i|
         if i.match(/[a-zA-Z]/)
             factor.times do
