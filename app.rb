@@ -18,5 +18,6 @@ def caesar_cipher(cipher,factor)
             end
         end
     end
+    words.map! {|i| i [-1]}
     words.join()
 end
