@@ -1,5 +1,5 @@
 require 'sinatra'
-require 'sinatra\reloader'
+#require 'sinatra\reloader'
 
 encode = ""
 
@@ -18,6 +18,6 @@ def caesar_cipher(cipher,factor)
             end
         end
     end
-    words.map! {|i| i [-1]}
+    words.map! {|i| i [-1]} #This line truncates characters to wraparound.
     words.join()
 end
